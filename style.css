@@ -20,9 +20,25 @@ body{
     line-height: 1.6;
 }
 .container{
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+.column{
+    float: left;
+    width: 23%;
+    margin:1%;
+}
+@media (max-width: 768px) {
+    .column {
+        width: 48%;
+    }
+}
+@media (max-width: 480px) {
+    .column {
+        width: 100%;
+    }
 }
 /*Header Style*/
 header{
