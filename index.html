@@ -2,110 +2,236 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Recipes ShareOra</title>
+        <title>ShareOra Recipes Blogs</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" href="style.css">
         <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5P3JHPHD');</script>
-<!-- End Google Tag Manager -->
+        <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5P3JHPHD');
+        </script>
+        <!-- End Google Tag Manager -->
     </head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PLMSQ9RM52"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLMSQ9RM52"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-  gtag('config', 'G-PLMSQ9RM52');
-</script>
+            gtag('config', 'G-PLMSQ9RM52');
+            </script>
     <body>
         <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P3JHPHD"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-        <!--Header-->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P3JHPHD"
+height="0" width="0" style="display:none;visibility:hidden">
+            </iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <header>
-            <div class="container header-container">
+            <div class="header-content">
                 <div class="logo">
                     <i class="fas fa-utensils"></i>
-                    <h1>ShareOra <span>Journeys</span></h1>
+                    <span>ShareOra Recipes</span>
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="recipes.html" class="active">Recipes</a></li>
-                        <li><a href="categories.html">Categories</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="add-recipes.html"><i class="fas fa-plus"></i> Share Your Recipes</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> My Recipes</a></li>
+                        <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                        <li><a href="#"><i class="fas fa-folder"></i> Categories</a></li>
                     </ul>
                 </nav>
             </div>
-    </body>
-        <section class="recipe-hero2">
-            <div class="recipe-hero-content">
-                <div class="container">
-                    <h1>Recipes</h1>
-                    <p>All kind of recipes collections here.</p>
-                    <form action="/search" method="get">
-                        <input type="search" name="q" class="search-box" placeholder="Search our site...">
-                        <button type="submit" class="search-button">Go</button>
-                    </form>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for recipes, ingredients, chef...">
+                <button><i class="fas fa-search"></i> Search</button>
+            </div>
+        </header>
+        <div class="categories">
+            <button class="category-btn active">All Recipes</button>
+            <button class="category-btn">Breakfast</button>
+            <button class="category-btn">Lunch</button>
+            <button class="category-btn">Dinner</button>
+            <button class="category-btn">Desserts</button>
+            <button class="category-btn">Vegetarian</button>
+            <button class="category-btn">Quick and Easy</button>
+            <button class="category-btn">Baking</button>
+            <button class="category-btn">Tea Break</button>
+        
+        </div>
+    <div class="container">
+        <div class="columns-container">
+            <!-- Recipe Card 1 -->
+            <div class="recipe-card">
+                <img src="Custard Tarts.png">
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Custard Tarts</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 2 hrs</span>
+                        <span><i class="fas fa-user"></i> Easy</span>
+                    </div>
+                    <p class="recipe-description">A simple yet delicious tarts, loved by every generations.</p>
+                    <div class="recipe-tags">
+                        <span class="tag">Desserts</span>
+                        <span class="tag">Baking</span>
+                        <span class="tag">Tea Break</span>
+                    </div>
+                    <button class="save-btn"><i class="far fa-bookmark"></i> View & Save</button>
                 </div>
             </div>
-        </section>
-            <footer>
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-section">
-                        <h3>About Flavourful Journeys</h3>
-                        <p>A food blog celebrating global cuisines, home cooking, and the joy of 
-                            sharing meals with loved ones.
-                        </p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
+            
+            <!-- Recipe Card 2 -->
+            <div class="recipe-card">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&h=400&q=80" alt="Vegetable Salad" class="recipe-img">
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Rainbow Quinoa Salad</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 25 min</span>
+                        <span><i class="fas fa-user"></i> Easy</span>
                     </div>
-                    <div class="footer-section">
-                        <h3>Quick Links</h3>
-                        <ul class="footer-links">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">All Recipes</a></li>
-                            <li><a href="#">Cooking Tips</a></li>
-                            <li><a href="#">Meal Planning</a></li>
-                            <li><a href="#">About Me</a></li>
-                        </ul>
+                    <p class="recipe-description">Nutrient-packed quinoa with colorful vegetables and a zesty lemon dressing. Perfect for meal prep!</p>
+                    <div class="recipe-tags">
+                        <span class="tag">Lunch</span>
+                        <span class="tag">Vegan</span>
+                        <span class="tag">Healthy</span>
                     </div>
-                    <div class="footer-section">
-                        <h3>Recipe Categories</h3>
-                        <ul class="footer-links">
-                            <li><a href="#">Breakfast</a></li>
-                            <li><a href="#">Lunch</a></li>
-                            <li><a href="#">Dinner</a></li>
-                            <li><a href="#">Desserts</a></li>
-                            <li><a href="#">Vegetarian</a></li>
-                            <li><a href="#">Baking</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h3>Contact</h3>
-                        <p><i class="fas fa-envolope"></i>pinkblueserv@gmail.com</p>
-                        <p><i class="fas fa-map-marker-alt">Singapore, Singapore.</i></p>
-                    </div>
-                </div>
-                <div class="copyright">
-                    <p>&copy;2025 ShareOra Recipes Sharing. All right reserved. Created with <i class="fas fa-heart" style="color:var(--primary)"></i> for food lovers</p>
+                    <button class="save-btn"><i class="far fa-bookmark"></i> View & Save</button>
                 </div>
             </div>
+            
+            <!-- Recipe Card 3 -->
+            <div class="recipe-card">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&h=400&q=80" alt="Pizza" class="recipe-img">
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Margherita Pizza</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 40 min</span>
+                        <span><i class="fas fa-user"></i> Medium</span>
+                    </div>
+                    <p class="recipe-description">Classic pizza with homemade dough, San Marzano tomato sauce, fresh mozzarella, and basil.</p>
+                    <div class="recipe-tags">
+                        <span class="tag">Dinner</span>
+                        <span class="tag">Italian</span>
+                        <span class="tag">Comfort Food</span>
+                    </div>
+                    <button class="save-btn"><i class="far fa-bookmark"></i> View & Save</button>
+                </div>
+            </div>
+            
+            <!-- Recipe Card 4 -->
+            <div class="recipe-card">
+                <img src="https://images.unsplash.com/photo-1565958011705-4f0eeed90eaf?auto=format&fit=crop&w=600&h=400&q=80" alt="Chicken" class="recipe-img">
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Lemon Herb Roasted Chicken</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 1 hr 20 min</span>
+                        <span><i class="fas fa-user"></i> Medium</span>
+                    </div>
+                    <p class="recipe-description">Juicy roasted chicken with crispy skin, infused with lemon, garlic, and fresh herbs.</p>
+                    <div class="recipe-tags">
+                        <span class="tag">Dinner</span>
+                        <span class="tag">Protein</span>
+                        <span class="tag">Family Meal</span>
+                    </div>
+                    <button class="save-btn"><i class="far fa-bookmark"></i> View & Save</button>
+                </div>
+            </div>
+            
+            <!-- Recipe Card 5 -->
+            <div class="recipe-card">
+                <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=600&h=400&q=80" alt="Smoothie" class="recipe-img">
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Berry Banana Smoothie Bowl</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 10 min</span>
+                        <span><i class="fas fa-user"></i> Easy</span>
+                    </div>
+                    <p class="recipe-description">Thick and creamy smoothie bowl topped with fresh berries, granola, and chia seeds.</p>
+                    <div class="recipe-tags">
+                        <span class="tag">Breakfast</span>
+                        <span class="tag">Vegan</span>
+                        <span class="tag">Quick</span>
+                    </div>
+                    <button class="save-btn"><i class="far fa-bookmark"></i> View & Save</button>
+                </div>
+            </div>
+            
+            <!-- Recipe Card 6 -->
+            <div class="recipe-card">
+                <img src="https://images.unsplash.com/photo-1565958011703-91f2722256b5?auto=format&fit=crop&w=600&h=400&q=80" alt="Chocolate Cake" class="recipe-img">
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Decadent Chocolate Cake</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 1 hr</span>
+                        <span><i class="fas fa-user"></i> Advanced</span>
+                    </div>
+                    <p class="recipe-description">Rich, moist chocolate cake with silky ganache frosting. A showstopper dessert for special occasions.</p>
+                    <div class="recipe-tags">
+                        <span class="tag">Dessert</span>
+                        <span class="tag">Chocolate</span>
+                        <span class="tag">Baking</span>
+                    </div>
+                    <button class="save-btn"><i class="far fa-bookmark"></i> View & Save</button>
+                </div>
+            </div>
+            
+            <!-- Recipe Card 7 -->
+            <div class="recipe-card">
+                <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=600&h=400&q=80" alt="Breakfast" class="recipe-img">
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Protein Pancakes with Berries</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 20 min</span>
+                        <span><i class="fas fa-user"></i> Easy</span>
+                    </div>
+                    <p class="recipe-description">Fluffy protein pancakes topped with fresh berries and a drizzle of maple syrup.</p>
+                    <div class="recipe-tags">
+                        <span class="tag">Breakfast</span>
+                        <span class="tag">High Protein</span>
+                        <span class="tag">Quick</span>
+                    </div>
+                    <button class="save-btn"><i class="far fa-bookmark"></i> View & Save</button>
+                </div>
+            </div>
+            
+            <!-- Recipe Card 8 -->
+            <div class="recipe-card">
+                <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=600&h=400&q=80" alt="Pasta" class="recipe-img">
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Creamy Mushroom Pasta</h3>
+                    <div class="recipe-meta">
+                        <span><i class="fas fa-clock"></i> 30 min</span>
+                        <span><i class="fas fa-user"></i> Medium</span>
+                    </div>
+                    <p class="recipe-description">Rich and creamy pasta with wild mushrooms, garlic, and fresh herbs.</p>
+                    <div class="recipe-tags">
+                        <span class="tag">Dinner</span>
+                        <span class="tag">Vegetarian</span>
+                        <span class="tag">Comfort Food</span>
+                    </div>
+                    <button class="save-btn"><i class="far fa-bookmark"></i> View & Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2025 ShareOra Shares</p>
+            <p>Sharing with one another is a bless itself. <i class="fas fa-heart style="color="var(--primary)"></i></p>
         </footer>
-        <script src="script.js"></script>
     </body>
+    <script src="script.js"></script>
 </html>
