@@ -1,48 +1,105 @@
-    //Toggle ingredient checkboxes 
-    document.querySelectorAll('.ingredient-check').forEach(item=>
-{
-    item.addEventListener('click',function(){
+// Add active class to category buttons on click
+document.querySelectorAll('.category-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        this.classList.add('active');
+    });
+});
+// Add animation to save buttons
+document.querySelectorAll('.save-btn').forEach(button => {
+    button.addEventListener('click', function() {
         const icon = this.querySelector('i');
-        if
-        (icon.classList.contains('fa-square'))
-        {
-            icon.classList.remove('fa-square');
-            icon.classList.add('fa-check-square');
-            this.parentElement.style.opacity = "0.6";
-        }else{
-            icon.classList.remove('fa-check-square');
-            icon.classList.add('fa-square');
-            this.parentElement.style.opacity = "1";
+        if (icon.classList.contains('far')) {
+            icon.classList.replace('far', 'fas');
+            this.style.backgroundColor = '#4ecdc4';
+            this.innerHTML = '<i class="fas fa-bookmark"></i> Saved' ;
+
+            // Reset after 2 seconds
+            setTimeout(() => {
+                this.innerHTML = '<i class="fas fa-bookmark"></i> Saved' ;
+            }, 2000);
+        } else {
+            icon.classList.replace('fas', 'far');
+            this.style.backgroundColor = '';
+            this.innerHTML = '<i class="fas fa-bookmark"></i> View & Save' ;
         }
     });
 });
-    // Print recipe functionality
-    document.querySelector('.action-btn:nth-child(1)')
-    .addEventListener('click',function(){
-        alert('Print functionality would open a print-friendly version of this recipe.');
-    });
-    // Save recipe functionality
-    document.querySelector('.action-btn:nth-child(2)')
-    .addEventListener('click',function(){
-        this.innerHTML='<i class="fas fa-save"></i> Saved!';
-        setTimeout(()=>{
-            this.innerHTML = '<i class="far fa-save"></i> Save';
-        }, 2000);
-    });
-    // Share recipe functionality
-    document.querySelector('.action-btn:nth-child(3)')
-    .addEventListener('click',function(){
-        alert('Share functionality would open sharing options for social media and email.');
-    });
-document.querySelectorAll('.filter-buttons button').forEach(button => {
-        button.addEventListener('click', () => {
-            const category = button.dataset.category;
-            document.querySelectorAll('.recipe-hero').forEach(card => {
-                if (category === 'all' || card.dataset.categories.includes(category)) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
+// Simple search functionallity
+document.querySelector('.search-bar button').addEventListener('click', function() {
+    const searchTerm = document.querySelector('.search-bar input').valuetoLowerCase();
+    if (searchTerm) {
+        alert('Searching for: ${searchTerm}');
+        // In a real app, you would filter recipes here
+    }
+});
+        // Add ingredient functionality
+        document.querySelector('.ingredient-list + .add-btn').addEventListener('click', function() {
+            const newIngredient = document.createElement('div');
+            newIngredient.className = 'list-item';
+            newIngredient.innerHTML = `
+                <input type="text" class="list-input" placeholder="e.g., 1 tbsp olive oil">
+                <button type="button" class="remove-btn"><i class="fas fa-times"></i></button>
+            `;
+            document.querySelector('.ingredient-list').appendChild(newIngredient);
+            
+            // Add event to new remove button
+            newIngredient.querySelector('.remove-btn').addEventListener('click', function() {
+                this.parentElement.remove();
             });
         });
-    });
+
+        // Add instruction step functionality
+        document.querySelector('.instruction-list + .add-btn').addEventListener('click', function() {
+            const newStep = document.createElement('div');
+            newStep.className = 'list-item';
+            newStep.innerHTML = `
+                <input type="text" class="list-input" placeholder="e.g., Bake for 25 minutes">
+                <button type="button" class="remove-btn"><i class="fas fa-times"></i></button>
+            `;
+            document.querySelector('.instruction-list').appendChild(newStep);
+            
+            // Add event to new remove button
+            newStep.querySelector('.remove-btn').addEventListener('click', function() {
+                this.parentElement.remove();
+            });
+        });
+
+        // Remove existing items
+        document.querySelectorAll('.remove-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                this.parentElement.remove();
+            });
+        });
+
+        // Tag selection
+        document.querySelectorAll('.tag-option').forEach(tag => {
+            tag.addEventListener('click', function() {
+                this.classList.toggle('selected');
+            });
+        });
+
+        // Form submission
+        document.getElementById('recipe-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Recipe submitted successfully! In a real application, this would save your recipe.');
+            // Reset form after submission
+            this.reset();
+            // Clear dynamic lists
+            document.querySelectorAll('.list-item:not(:first-child)').forEach(item => {
+                item.remove();
+            });
+            // Reset tags
+            document.querySelectorAll('.tag-option').forEach(tag => {
+                tag.classList.remove('selected');
+            });
+            // Set default selected tag
+            document.querySelectorAll('.tag-option')[1].classList.add('selected');
+        });
+
+        // Image upload interaction
+        document.querySelector('.image-upload').addEventListener('click', function() {
+            alert('Image upload dialog would open here. This is a frontend demo.');
+        });
