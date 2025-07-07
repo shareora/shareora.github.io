@@ -151,7 +151,7 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: inline-block;
-            width: 700;
+            width: 100%;
             margin-bottom: 25px;
             break-inside: avoid;
         }
@@ -162,8 +162,8 @@
         }
 
         .recipe-img {
-            width: 100%;
-            height: 200px;
+            width: 700px;
+            height: 500px;
             object-fit: cover;
             display: block;
         }
