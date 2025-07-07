@@ -229,7 +229,7 @@
             margin-top: 15px;
         }
 
-        .save-btn:hover {
+        .link-btn:hover {
             background: #ff5252;
             transform: scale(1.05);
         }
