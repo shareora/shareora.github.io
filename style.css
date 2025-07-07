@@ -233,6 +233,9 @@
             background: #ff5252;
             transform: scale(1.05);
         }
+a {
+            text-decoration: none;
+}
 
         footer {
             text-align: center;
@@ -673,6 +676,3 @@
                 justify-content: center;
             }
         }
-.hyperlink {
-            text-decoration: none;
-}
