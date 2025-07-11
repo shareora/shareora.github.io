@@ -51,11 +51,6 @@
         .logo i {
             color: var(--accent);
         }
-.shareora {
-            height: 200px;
-            width: 200px;
-            border-radius: 100 100 100 100;
-            align-item: center;
 
         nav ul {
             display: flex;
@@ -180,10 +175,12 @@
             transform: scale(1.03);
             box-shadow: 0 15px 30px rgba(0,0,0,0.15);
         }
+.shareora{
+            
 
         .recipe-img {
-            width: 200;
-            height: 200;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
             display: block;
         }
