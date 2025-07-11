@@ -52,9 +52,9 @@
             color: var(--accent);
         }
 .logo-img {
-            height: 150px;
-            width: 150px;
-            border-radius: 75px 75px 75px 75px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50px 50px 50px 50px;
 
         nav ul {
             display: flex;
@@ -181,7 +181,7 @@
         }
 
         .recipe-img {
-            width: 500px;
+            width: 400px;
             height: 200px;
             object-fit: cover;
             display: block;
