@@ -51,6 +51,10 @@
         .logo i {
             color: var(--accent);
         }
+.logo-img {
+            height: 150px;
+            width: 150px;
+            border-radius: 75px 75px 75px 75px;
 
         nav ul {
             display: flex;
