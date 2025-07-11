@@ -181,7 +181,7 @@
         }
 
         .recipe-img {
-            width: 100%;
+            width: 500px;
             height: 200px;
             object-fit: cover;
             display: block;
