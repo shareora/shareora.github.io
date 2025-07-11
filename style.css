@@ -54,7 +54,7 @@
 .logo-img {
             height: 50px;
             width: 50px;
-            border-radius: 50 50 50 50;
+            border-radius: 25 25 25 25;
 
         nav ul {
             display: flex;
@@ -181,7 +181,7 @@
         }
 
         .recipe-img {
-            width: 100%;
+            width: 250px;
             height: 200px;
             object-fit: cover;
             display: block;
