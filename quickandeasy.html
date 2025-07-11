@@ -1,79 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <title>ShareOra Recipes Blogs</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
-        <!-- Google Tag Manager -->
-        <script>
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-5P3JHPHD');
-        </script>
-        <!-- End Google Tag Manager -->
-    </head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLMSQ9RM52"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-PLMSQ9RM52');
-            </script>
-    <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript>
-            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P3JHPHD"
-height="0" width="0" style="display:none;visibility:hidden">
-            </iframe>
-        </noscript>
-        <!-- End Google Tag Manager (noscript) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Techniques</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="container">
         <header>
-            <div class="header-content">
-                <div class="logo">
-                    <i class="fas fa-utensils"></i>
-                    <span>ShareOra Quick & Easy</span>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="recipes.html"><i class="fas fa-book"></i> Recipes</a></li>
-                        <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search for recipes, ingredients, chef...">
-                <button><i class="fas fa-search"></i> Search</button>
-            </div>
+            <h1><i class="fas fa-image"></i> Background Image Techniques</h1>
+            <p class="subtitle">Learn how to implement beautiful background images with CSS</p>
         </header>
-        <div class="categories">
-            <a href="recipes.html"><button class="category-btn active">All Recipes</button></a>
-            <a href="breakfast.html"><button class="category-btn">Breakfast</button></a>
-            <a href="lunch.html"><button class="category-btn">Lunch</button></a>
-            <a href="dinner.html"><button class="category-btn">Dinner</button></a>
-            <a href="dessert.html"><button class="category-btn">Dessert</button></a>
-            <a href="vegetarian.html"><button class="category-btn">Vegetarian</button></a>
-            <a href="quickandeasy.html"><button class="category-btn">Quick and Easy</button></a>
-            <a href="baking.html"><button class="category-btn">Baking</button></a>
-            <a href="teabreak.html"><button class="category-btn">Tea Break</button></a>
+        
+        <div class="techniques">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Basic Background</h2>
+                </div>
+                <div class="card-body">
+                    <div class="preview" style="background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600') center/cover;"></div>
+                    <p>Simple background image that covers the entire element.</p>
+                    <div class="code">
+                        <span class="property">background</span>: <span class="value">url('image.jpg')</span>;<br>
+                        <span class="property">background-size</span>: <span class="value">cover</span>;<br>
+                        <span class="property">background-position</span>: <span class="value">center</span>;
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h2>Fixed Background</h2>
+                </div>
+                <div class="card-body">
+                    <div class="preview" style="background: url('https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?auto=format&fit=crop&w=600') center/cover fixed;"></div>
+                    <p>Background stays fixed while content scrolls.</p>
+                    <div class="code">
+                        <span class="property">background</span>: <span class="value">url('image.jpg')</span>;<br>
+                        <span class="property">background-attachment</span>: <span class="value">fixed</span>;<br>
+                        <span class="property">background-size</span>: <span class="value">cover</span>;
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h2>Gradient Overlay</h2>
+                </div>
+                <div class="card-body">
+                    <div class="preview" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600') center/cover;"></div>
+                    <p>Image with color overlay for better text readability.</p>
+                    <div class="code">
+                        <span class="property">background</span>: <span class="value">linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image.jpg')</span>;<br>
+                        <span class="property">background-size</span>: <span class="value">cover</span>;<br>
+                        <span class="property">background-position</span>: <span class="value">center</span>;
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <h2><i class="fas fa-sliders-h"></i> Background Customizer</h2>
+            <div class="control-group">
+                <div class="control-item">
+                    <label for="size">Background Size: <span class="value-display" id="size-value">cover</span></label>
+                    <select id="size">
+                        <option value="cover">Cover</option>
+                        <option value="contain">Contain</option>
+                        <option value="auto">Auto</option>
+                        <option value="200px">200px</option>
+                        <option value="50%">50%</option>
+                    </select>
+                </div>
+                
+                <div class="control-item">
+                    <label for="position">Background Position: <span class="value-display" id="position-value">center</span></label>
+                    <select id="position">
+                        <option value="center">Center</option>
+                        <option value="top">Top</option>
+                        <option value="bottom">Bottom</option>
+                        <option value="left">Left</option>
+                        <option value="right">Right</option>
+                        <option value="top left">Top Left</option>
+                        <option value="top right">Top Right</option>
+                    </select>
+                </div>
+                
+                <div class="control-item">
+                    <label for="opacity">Overlay Opacity: <span class="value-display" id="opacity-value">0.5</span></label>
+                    <input type="range" id="opacity" min="0" max="1" step="0.1" value="0.5">
+                </div>
+                
+                <div class="control-item">
+                    <label for="attachment">Background Attachment:</label>
+                    <select id="attachment">
+                        <option value="scroll">Scroll</option>
+                        <option value="fixed">Fixed</option>
+                        <option value="local">Local</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="demo-area" id="demo-bg">
+            <div class="demo-content">
+                <h2>Interactive Demo</h2>
+                <p>Use the controls above to customize this background in real-time.</p>
+                <p>See how different settings affect the appearance of your background image.</p>
+            </div>
+        </div>
+        
+        <div class="tips">
+            <h2><i class="fas fa-lightbulb"></i> Pro Tips</h2>
+            <div class="tip-list">
+                <div class="tip">
+                    <i class="fas fa-compress-arrows-alt"></i>
+                    <h3>Optimize Images</h3>
+                    <p>Compress your background images to reduce loading time. Use tools like TinyPNG or ImageOptim.</p>
+                </div>
+                <div class="tip">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Use media queries to load different images for different screen sizes and resolutions.</p>
+                </div>
+                <div class="tip">
+                    <i class="fas fa-eye"></i>
+                    <h3>Readability</h3>
+                    <p>Use gradient overlays or text shadows to ensure text remains readable over background images.</p>
+                </div>
+            </div>
+        </div>
         
         <footer>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-pinterest"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-            <p>&copy; 2025 ShareOra Shares</p>
-            <p>Sharing with one another is a bless itself. <i class="fas fa-heart style="color="var(--primary)"></i></p>
+            <p>Created with HTML, CSS, and JavaScript | Background Image Techniques</p>
+            <p>Replace placeholder URLs with your own image paths in production</p>
         </footer>
-    </body>
-    <script src="script.js"></script>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
 </html>
