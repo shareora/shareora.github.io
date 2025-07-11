@@ -1,66 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <title>ShareOra Recipes Blogs</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
-        <!-- Google Tag Manager -->
-        <script>
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-5P3JHPHD');
-        </script>
-        <!-- End Google Tag Manager -->
-    </head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLMSQ9RM52"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-PLMSQ9RM52');
-            </script>
-    <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript>
-            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P3JHPHD"
-height="0" width="0" style="display:none;visibility:hidden">
-            </iframe>
-        </noscript>
-        <!-- End Google Tag Manager (noscript) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo as Header Background</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
         <header>
+            <div class="logo-bg"></div>
             <div class="header-content">
-                <div class="logo">
-                    <i class="fas fa-utensils"></i>
-                    <span>ShareOra About</span>
-                </div>
+                <h1>Company Brand</h1>
+                <p>Your logo as a subtle background creates a professional and branded appearance</p>
                 <nav>
                     <ul>
-                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="#"><i class="fas fa-book"></i> Recipes</a></li>
-                        <li><a href="#"><i class="fas fa-user"></i> About</a></li>
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="#"><i class="fas fa-cog"></i> Services</a></li>
+                        <li><a href="#"><i class="fas fa-image"></i> Portfolio</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <div class="categories">
-            
-        <footer>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-pinterest"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+        
+        <section class="features">
+            <div class="feature-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Design Excellence</h3>
+                <p>Our team creates visually stunning designs that capture your brand's essence and communicate your message effectively.</p>
             </div>
-            <p>&copy; 2025 ShareOra Shares</p>
-            <p>Sharing with one another is a bless itself. <i class="fas fa-heart style="color="var(--primary)"></i></p>
+            
+            <div class="feature-card">
+                <i class="fas fa-code"></i>
+                <h3>Clean Code</h3>
+                <p>We implement designs with clean, semantic code that ensures fast loading times and optimal performance across devices.</p>
+            </div>
+            
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive Design</h3>
+                <p>Every website we create is fully responsive, providing an exceptional experience on all devices and screen sizes.</p>
+            </div>
+        </section>
+        
+        <section class="controls">
+            <h2>Logo Background Customization</h2>
+            <div class="control-group">
+                <div class="control-item">
+                    <label for="opacity">Logo Opacity: <span id="opacity-value">0.15</span></label>
+                    <input type="range" id="opacity" min="0.05" max="0.5" step="0.05" value="0.15">
+                </div>
+                
+                <div class="control-item">
+                    <label for="size">Logo Size: <span id="size-value">50%</span></label>
+                    <input type="range" id="size" min="20" max="100" step="5" value="50">
+                </div>
+                
+                <div class="control-item">
+                    <label for="position">Logo Position:</label>
+                    <select id="position">
+                        <option value="center">Center</option>
+                        <option value="top left">Top Left</option>
+                        <option value="top right">Top Right</option>
+                        <option value="bottom left">Bottom Left</option>
+                        <option value="bottom right">Bottom Right</option>
+                    </select>
+                </div>
+                
+                <div class="control-item">
+                    <label for="bg-color">Header Background:</label>
+                    <input type="color" id="bg-color" value="#1e3c72">
+                </div>
+            </div>
+        </section>
+        
+        <section class="code-block">
+            <h3>Implementation Code</h3>
+            <pre><code>&lt;style&gt;
+<span class="comment">/* Header with logo background */</span>
+<span class="selector">header</span> {
+  <span class="property">position</span>: <span class="value">relative</span>;
+  <span class="property">height</span>: <span class="value">300px</span>;
+}
+
+<span class="comment">/* Logo background element */</span>
+<span class="selector">.logo-bg</span> {
+  <span class="property">position</span>: <span class="value">absolute</span>;
+  <span class="property">top</span>: <span class="value">0</span>;
+  <span class="property">left</span>: <span class="value">0</span>;
+  <span class="property">width</span>: <span class="value">100%</span>;
+  <span class="property">height</span>: <span class="value">100%</span>;
+  <span class="property">background-image</span>: <span class="value">url('your-logo.png')</span>;
+  <span class="property">background-repeat</span>: <span class="value">no-repeat</span>;
+  <span class="property">background-position</span>: <span class="value">center</span>; <span class="comment">/* Position adjustment */</span>
+  <span class="property">background-size</span>: <span class="value">50%</span>; <span class="comment">/* Size adjustment */</span>
+  <span class="property">opacity</span>: <span class="value">0.15</span>; <span class="comment">/* Transparency */</span>
+  <span class="property">z-index</span>: <span class="value">1</span>;
+}
+
+<span class="comment">/* Content above the logo */</span>
+<span class="selector">.header-content</span> {
+  <span class="property">position</span>: <span class="value">relative</span>;
+  <span class="property">z-index</span>: <span class="value">2</span>; <span class="comment">/* Ensures content appears above background */</span>
+}
+&lt;/style&gt;
+
+&lt;header&gt;
+  &lt;div class="logo-bg"&gt;&lt;/div&gt;
+  &lt;div class="header-content"&gt;
+    &lt;!-- Your header content here --&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+        </section>
+        
+        <footer>
+            <p>&copy; 2023 Company Name. All rights reserved. | Logo Background Implementation</p>
         </footer>
-    </body>
-    <script src="script.js"></script>
+    </div>
+    
+    <script src="script2.js"></script>
+</body>
 </html>
