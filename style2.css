@@ -69,6 +69,7 @@
             max-width: 700px;
             margin-bottom: 25px;
         }
+
         
         /* Navigation */
         nav {
@@ -98,6 +99,57 @@
         nav a:hover {
             background: #9d48ce;
             color: white;
+        }
+.controls {
+            position: relative;
+            height: 300px;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(45deg, #5a1e69, #bb3bb0);       
+}
+.control-content {
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            z-index: 2;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .control-content h2 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+        
+        .control-content p {
+            font-size: 1.4rem;
+            max-width: 700px;
+            margin-bottom: 25px;
+        }
+.control-content i {
+            font-size: 3rem;
+            color: #5e1a6c;
+            margin-bottom: 20px;
+        }
+        
+        .header-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+        
+        .header-content p {
+            font-size: 1.4rem;
+            max-width: 700px;
+            margin-bottom: 25px;
         }
         
         /* Main content */
@@ -131,80 +183,20 @@
             margin-bottom: 15px;
             color: #651a6c;
         }
-        
-        /* Control panel */
-        .controls {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin: 40px 0;
-        }
-.control-card {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        
-        .control-card:hover {
-            transform: translateY(-10px);
-        
-        .controls h2 {
-            text-align: center;
-            color: #5c1a6c;
-            margin-bottom: 25px;
-        }
-.controls p {
-            text-align: center;
-}
-.controls i {
-            font-size: 3rem;
-            color: #5e1a6c;
-            margin-bottom: 20px;
-            text: 
-}
-a {
+features a {
             text-decoration: none;
             color: #a443bd;
             font-weight: 600;
             padding: 10px 15px;
             border-radius: 5px;
             transition: all 0.3s ease;
-}
-a:hover {
+        }
+        
+features a:hover {
             background: #9d48ce;
             color: white;
         }
-        
-        .control-group {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        
-        .control-item {
-            margin-bottom: 20px;
-        }
-        
-        .control-item label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: #631a6c;
-        }
-        
-        .control-item input[type="range"] {
-            width: 100%;
-        }
-        
-        .control-item select, .control-item input[type="color"] {
-            width: 100%;
-            padding: 8px;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-        }
-        
+            
         /* Footer */
         footer {
             background: rgba(0, 0, 0, 0.8);
