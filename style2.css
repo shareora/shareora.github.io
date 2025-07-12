@@ -188,7 +188,7 @@
             margin-bottom: 15px;
             color: #651a6c;
         }
-features a {
+.features a {
             text-decoration: none;
             color: #a443bd;
             font-weight: 600;
@@ -197,7 +197,7 @@ features a {
             transition: all 0.3s ease;
         }
         
-features a:hover {
+.features a:hover {
             background: #9d48ce;
             color: white;
         }
