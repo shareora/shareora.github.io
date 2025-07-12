@@ -26,7 +26,7 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            background: linear-gradient(45deg, #1e3c72, #2a5298);
+            background: linear-gradient(45deg, #611e72, #ee4d8a);
         }
         
         /* Logo background */
@@ -88,7 +88,7 @@
         
         nav a {
             text-decoration: none;
-            color: #1a2a6c;
+            color: #a443bd;
             font-weight: 600;
             padding: 10px 15px;
             border-radius: 5px;
@@ -96,7 +96,7 @@
         }
         
         nav a:hover {
-            background: #1a2a6c;
+            background: #9d48ce;
             color: white;
         }
         
@@ -122,14 +122,14 @@
         
         .feature-card i {
             font-size: 3rem;
-            color: #1a2a6c;
+            color: #5e1a6c;
             margin-bottom: 20px;
         }
         
         .feature-card h3 {
             font-size: 1.8rem;
             margin-bottom: 15px;
-            color: #1a2a6c;
+            color: #651a6c;
         }
         
         /* Control panel */
@@ -143,7 +143,7 @@
         
         .controls h2 {
             text-align: center;
-            color: #1a2a6c;
+            color: #5c1a6c;
             margin-bottom: 25px;
         }
         
@@ -161,7 +161,7 @@
             display: block;
             margin-bottom: 8px;
             font-weight: 600;
-            color: #1a2a6c;
+            color: #631a6c;
         }
         
         .control-item input[type="range"] {
