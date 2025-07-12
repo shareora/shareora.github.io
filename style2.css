@@ -139,6 +139,16 @@
             gap: 25px;
             margin: 40px 0;
         }
+.control-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .control-card:hover {
+            transform: translateY(-10px);
         
         .controls h2 {
             text-align: center;
