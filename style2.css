@@ -146,6 +146,11 @@
             color: #5c1a6c;
             margin-bottom: 25px;
         }
+.controls i {
+            font-size: 3rem;
+            color: #5e1a6c;
+            margin-bottom: 20px;
+}
         
         .control-group {
             display: grid;
