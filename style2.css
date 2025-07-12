@@ -4,19 +4,19 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-        
+
 body {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('shareorajpg.jpg');
     background-size: cover;
     background-position: center;
 }
-        
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
-        
+
 /* Header with logo background */
 header {
     position: relative;
@@ -28,7 +28,7 @@ header {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     background: linear-gradient(45deg, #5a1e69, #bb3bb0);
 }
-        
+
 /* Logo background */
 .logo-bg {
     position: absolute;
@@ -43,7 +43,7 @@ header {
     opacity: 0.15;
     z-index: 1;
 }
-        
+
 /* Header content */
 .header-content {
     position: relative;
@@ -57,24 +57,20 @@ header {
     z-index: 2;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
-        
-.header-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 15px;
-    letter-spacing: 2px;
-}
+
+.header-content h1,
 .header-content h3 {
     font-size: 3.5rem;
     margin-bottom: 15px;
     letter-spacing: 2px;
 }
-        
+
 .header-content p {
     font-size: 1.4rem;
     max-width: 700px;
     margin-bottom: 25px;
 }
-        
+
 /* Navigation */
 nav {
     background: rgba(255, 255, 255, 0.9);
@@ -83,14 +79,14 @@ nav {
     margin-top: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-        
+
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
     gap: 25px;
 }
-        
+
 nav a {
     text-decoration: none;
     color: #a443bd;
@@ -99,12 +95,13 @@ nav a {
     border-radius: 5px;
     transition: all 0.3s ease;
 }
-        
+
 nav a:hover {
     background: #9d48ce;
     color: white;
 }
 
+/* Controls */
 .controls {
     position: relative;
     height: 300px;
@@ -115,6 +112,7 @@ nav a:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     background: linear-gradient(45deg, #5a1e69, #bb3bb0);       
 }
+
 .control-content {
     position: relative;
     height: 100%;
@@ -127,13 +125,13 @@ nav a:hover {
     z-index: 2;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
-        
+
 .control-content h2 {
     font-size: 3.5rem;
     margin-bottom: 15px;
     letter-spacing: 2px;
 }
-        
+
 .control-content p {
     font-size: 1.4rem;
     max-width: 700px;
@@ -145,27 +143,15 @@ nav a:hover {
     color: #5e1a6c;
     margin-bottom: 20px;
 }
-        
-.header-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 15px;
-    letter-spacing: 2px;
-}
-        
-.header-content p {
-    font-size: 1.4rem;
-    max-width: 700px;
-    margin-bottom: 25px;
-}
-        
-/* Main content */
+
+/* Features Section */
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
     margin: 40px 0;
 }
-        
+
 .feature-card {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
@@ -173,17 +159,17 @@ nav a:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
-        
+
 .feature-card:hover {
     transform: translateY(-10px);
 }
-        
+
 .feature-card i {
     font-size: 3rem;
     color: #5e1a6c;
     margin-bottom: 20px;
 }
-        
+
 .feature-card h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
@@ -198,24 +184,37 @@ nav a:hover {
     border-radius: 5px;
     transition: all 0.3s ease;
 }
-        
+
 .features a:hover {
     background: #9d48ce;
     color: white;
 }
-            
+
 /* Footer */
 footer {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(77, 26, 78, 0.8);
     color: white;
     text-align: center;
     padding: 25px;
     margin-top: 40px;
     border-radius: 10px;
 }
-        
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* adjust spacing as needed */
+    margin-bottom: 10px;
+}
+
+.social-icons i {
+    color: #bb3bb0;
+    font-size: 1.5rem;
+}
+
+
+/* Code Block Styling */
 .code-block {
-    background: #1e1e1e;
+    background: #4e0b57;
     color: #d4d4d4;
     padding: 20px;
     border-radius: 8px;
@@ -223,24 +222,37 @@ footer {
     font-family: 'Courier New', monospace;
     overflow-x: auto;
 }
-        
+
 .code-block h3 {
-    color: #9cdcfe;
+    color: #fc8ae9;
     margin-bottom: 15px;
 }
-        
-.comment { color: #6a9955; }
-.selector { color: #d7ba7d; }
-.property { color: #9cdcfe; }
-.value { color: #ce9178; }
-        
- @media (max-width: 768px) {
-.header-content h1 {
-    font-size: 2.5rem;}
-            
-nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+
+.comment {
+    color: #6a9955;
 }
+
+.selector {
+    color: #d7ba7d;
+}
+
+.property {
+    color: #9cdcfe;
+}
+
+.value {
+    color: #ce9178;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }
