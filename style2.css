@@ -134,6 +134,7 @@
         
         /* Control panel */
         .controls {
+            display: grid;
             background: rgba(255, 255, 255, 0.95);
             border-radius: 10px;
             padding: 30px;
@@ -146,6 +147,9 @@
             color: #5c1a6c;
             margin-bottom: 25px;
         }
+.controls p {
+            text-align: center;
+}
 .controls i {
             font-size: 3rem;
             color: #5e1a6c;
