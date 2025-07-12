@@ -164,7 +164,7 @@
             margin-bottom: 20px;
             text: 
 }
-.features a {
+a {
             text-decoration: none;
             color: #a443bd;
             font-weight: 600;
@@ -172,6 +172,10 @@
             border-radius: 5px;
             transition: all 0.3s ease;
 }
+a:hover {
+            background: #9d48ce;
+            color: white;
+        }
         
         .control-group {
             display: grid;
