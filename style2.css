@@ -26,7 +26,7 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            background: linear-gradient(45deg, #b23bcf, #bb3bb0);
+            background: linear-gradient(45deg, #5a1e69, #bb3bb0);
         }
         
         /* Logo background */
@@ -38,8 +38,8 @@
             height: 100%;
             background-image: url('ShareOra Logo.jpg');
             background-repeat: no-repeat;
-            background-position: left;
-            background-size: 50%;
+            background-position: center;
+            background-size: 30%;
             opacity: 0.15;
             z-index: 1;
         }
