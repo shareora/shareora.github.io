@@ -306,3 +306,29 @@ button:hover {
     background: #9d48ce;
     color: white;
 }
+.link-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--primary);
+    color: rgb(71, 14, 69);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.link-btn:hover {
+    background: #14000e;
+    transform: scale(1.05);
+}
+
+.recipe-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
