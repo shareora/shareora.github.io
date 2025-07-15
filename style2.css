@@ -161,6 +161,118 @@ nav a:hover {
     transition: transform 0.3s ease;
 }
 
+    .icon-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card-link {
+      text-decoration: none;
+      display: inline-block;
+      color: inherit;
+      transition: transform 0.3s ease;
+    }
+
+    .card-link:hover {
+      transform: scale(1.01);
+    }
+
+    .icon-container {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      border-radius: 12px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 20px 15px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      transition: all 0.4s ease;
+      overflow: hidden;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .icon-container:hover {
+      transform: scale(1.03);
+      filter: brightness(1.15);
+    }
+
+    .animated-icon {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 32px;
+      color: rgba(255, 255, 255, 0.6);
+      transition: all 0.4s ease;
+    }
+
+    .has-icon:hover .animated-icon {
+      transform: translateX(-50%) scale(1.2) rotate(5deg);
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .card-subtitle {
+      font-size: 14px;
+      opacity: 0.85;
+      margin-top: 4px;
+    }
+
+    /* --- Backgrounds --- */
+    
+
+    .recipe-card {
+      background-color: #bf22e6;
+      background-image: url("data:image/svg+xml;utf8,<svg fill='white' fill-opacity='0.07' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'><path d='M416 0c-35.3 0-64 28.7-64 64v193.5c0 30.2 21.3 56.9 51 62.6V480c0 17.7 14.3 32 32 32s32-14.3 32-32V320.1c29.7-5.7 51-32.4 51-62.6V64c0-35.3-28.7-64-64-64z'/></svg>");
+    }
+
+    .idea-card {
+      background-color: #dba2e9;
+      background-image: url("data:image/svg+xml;utf8,<svg fill='black' fill-opacity='0.05' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'><path d='M192 0C86 0 0 86 0 192c0 47.6 17.2 91.1 45.6 124.8 10.3 12.2 22.2 23.1 35.3 32.2l1.1 .8V432c0 8.8 7.2 16 16 16h32v32c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32V448h32c8.8 0 16-7.2 16-16V349.8l1.1-.8c13.1-9.1 25-20 35.3-32.2C366.8 283.1 384 239.6 384 192 384 86 298 0 192 0z'/></svg>");
+      color: #333;
+    }
+
+    .language-card {
+      background-color: #bf22e6;
+      background-image: url("data:image/svg+xml;utf8,<svg fill='white' fill-opacity='0.06' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512'><path d='M0 96c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32s-14.3 32-32 32H64V192h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H64v64h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V96z'/></svg>");
+    }
+
+    /* --- Responsive --- */
+    @media (max-width: 768px) {
+      .icon-container {
+        width: 90%;
+        height: 180px;
+        font-size: 16px;
+        padding: 16px 10px;
+      }
+
+      .animated-icon {
+        font-size: 28px;
+        top: 16px;
+      }
+
+      .card-title {
+        font-size: 16px;
+      }
+
+      .card-subtitle {
+        font-size: 13px;
+      }
+    }
+
 .feature-card:hover {
     transform: translateY(-10px);
 }
