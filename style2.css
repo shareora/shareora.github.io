@@ -1,0 +1,65 @@
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff4d4d, #b84dff, #ff99cc);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+header, footer {
+    background: linear-gradient(to bottom, #db2d61, #e86ff3);
+    padding: 20px;
+    text-align: center;
+    color: #ccffff;
+    display: contents;
+    font-size: larger;
+}
+
+    .dashboard {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 40px auto;
+    max-width: 750px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.05);
+    color: #faf8f8;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+    th, td {
+      border: 1px solid rgba(255,255,255,0.3);
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    tfoot td {
+      font-weight: bold;
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    input[type="checkbox"] {
+      transform: scale(1.3);
+      cursor: pointer;
+    }

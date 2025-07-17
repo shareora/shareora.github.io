@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding Al-Quran</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+  <header>
+    <div class="intro">
+    <h1>My Al-Qur'an Learning Journey</h1>
+    <p class="recite">Bismillahirahmanirahiim.<br> بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيْم</p>
+    </div>
+  </header>
+
+    <table class="dashboard">
+        <thead>
+            <tr>
+            <th>Total Words</th>
+            <th>Total Counts</th>
+            <th>Total Learnt</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="totalRows"></td>
+                <td id="totalCounts"></td>
+                <td id="totalLearnt"></td>
+            </tr>
+        </tbody>
+    </table>
+
+  <main>
+
+    <table id="learningTable" class="table-main">
+        <caption>Arabic Words to English</caption>
+    <thead>
+        <tr>
+            <th>Arabic</th>
+            <th>Translit</th>
+            <th>English</th>
+            <th>Counts</th>
+            <th>Learnt</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>مَلَك</td>
+            <td>malak</td>
+            <td>angel</td>
+            <td class="countCell">88</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>شَرِيك</td>
+            <td>sharik</td>
+            <td>associate</td>
+            <td class="countCell">40</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>كِتَاب</td>
+            <td>kitaab</td>
+            <td>book</td>
+            <td class="countCell">261</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>أُمَّة</td>
+            <td>umma</td>
+            <td>community</td>
+            <td class="countCell">64</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>مِيثَاق</td>
+            <td>mithaq</td>
+            <td>covenant</td>
+            <td class="countCell">25</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>مُجْرِم</td>
+            <td>mujrim</td>
+            <td>criminal</td>
+            <td class="countCell">52</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>كُفَّار</td>
+            <td>kuffar</td>
+            <td>disbeliever</td>
+            <td class="countCell">21</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>عَدُوّ</td>
+            <td>aduw</td>
+            <td>enemy</td>
+            <td class="countCell">44</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>إِله</td>
+            <td>ilh</td>
+            <td>God</td>
+            <td class="countCell">34</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>وَلِي</td>
+            <td>wali</td>
+            <td>guardian</td>
+            <td class="countCell">86</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>مَلَأ</td>
+            <td>mala'</td>
+            <td>leaders</td>
+            <td class="countCell">22</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>أحَد</td>
+            <td>ahad</td>
+            <td>one</td>
+            <td class="countCell">85</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>وَاحِد</td>
+            <td>wahid</td>
+            <td>one</td>
+            <td class="countCell">61</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>ذَكَر</td>
+            <td>dhakar</td>
+            <td>male</td>
+            <td class="countCell">16</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>إِنْسَان</td>
+            <td>insan</td>
+            <td>man</td>
+            <td class="countCell">65</td>
+            <td type="checkbox"><input type="checkbox"</td>
+        </tr>
+        <tr>
+            <td>عَهْد</td>
+            <td>'ahd</td>
+            <td>pact</td>
+            <td class="countCell">29</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>قَوْم</td>
+            <td>qawm</td>
+            <td>people</td>
+            <td class="countCell">383</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>زَوْج</td>
+            <td>zawj</td>
+            <td>spouse</td>
+            <td class="countCell">76</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>عَرْش</td>
+            <td>'arsh</td>
+            <td>throne</td>
+            <td class="countCell">26</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>غَيْب</td>
+            <td>ghayb</td>
+            <td>unseen</td>
+            <td class="countCell">49</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>شَهَادَة</td>
+            <td>shahadat</td>
+            <td>witness</td>
+            <td class="countCell">26</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>اِمْرَأَة</td>
+            <td>aimraa'at</td>
+            <td>woman</td>
+            <td class="countCell">83</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td>كَلِمَة</td>
+            <td>Kalima</td>
+            <td>word</td>
+            <td class="countCell">42</td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="countCell"></td>
+            <td><input type="checkbox" class="learntCheckbox"></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr id="totalRow">
+            <td colspan="3">Total words in Al-Qur'an learnt:</td>
+            <td id="totalValue"></td>
+            <td id="totalCount">0</td>
+        </tr>
+    </tfoot>
+    </table>
+  </main>
+  <footer>
+    <p>&copy; 2025 ShareOra. All rights reserved. | Sharing is Caring. <i class="fas fa-heart"></i></p>
+  </footer>
+</body>
+<script src="script1.js"></script>
+</html>
