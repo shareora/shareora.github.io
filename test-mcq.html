@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style-mcq.css">
+</head>
+<body>
+
+<div class="quiz-container">
+  <h2>Quiz</h2>
+
+  <form id="quizForm">
+    <div class="question">
+      <p>1. What does "ajmain" mean?</p>
+      <input type="radio" name="q1" value="a"> child<br>
+      <input type="radio" name="q1" value="b"> all<br>
+      <input type="radio" name="q1" value="c"> enemy<br>
+    </div>
+
+    <div class="question">
+      <p>2. What does "mithaq" mean?</p>
+      <input type="radio" name="q2" value="a"> covenant<br>
+      <input type="radio" name="q2" value="b"> favors<br>
+      <input type="radio" name="q2" value="c"> hand<br>
+    </div>
+
+    <div class="question">
+      <p>3. What does "nafs" mean?</p>
+      <input type="radio" name="q3" value="a"> God<br>
+      <input type="radio" name="q3" value="b"> self<br>
+      <input type="radio" name="q3" value="c"> soul<br>
+    </div>
+
+    <div class="question">
+      <p>4. What does "'ayn'" mean?</p>
+      <input type="radio" name="q4" value="a"> foot<br>
+      <input type="radio" name="q4" value="b"> heart<br>
+      <input type="radio" name="q4" value="c"> eye<br>
+    </div>
+
+    <button type="button" onclick="checkAnswers()">Submit</button>
+  </form>
+
+  <div id="result" class="result" style="display:none;"></div>
+</div>
+
+<script src="script-mcq.js">
+</script>
+
+</body>
+</html>
