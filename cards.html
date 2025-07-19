@@ -4,9 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="recipes collections,">
-        <title>ShareOra Wordlists</title>
+        <title>ShareOra Al-Quran Words</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="style-card.css">
+        <link rel="stylesheet" href="style-cards.css">
         <!-- Google Tag Manager -->
         <script>
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -38,34 +38,55 @@ height="0" width="0" style="display:none;visibility:hidden">
   
     <header>
         <div class="header-content">
-        <h1>ShareOra Files</h1>
-        <h2>Bismillahirahmanirahiim</h2>
-        <h3>بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيْم</h3>
+        <h1>Al-Qur'an Words</h1>
+        <p>بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيْم</s>
+
         </div>
         <nav>
           <ul>
-            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
-            <li><a href="cards.html"><i class="fas fa-image"></i> Files</a></li>
-            <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
-            <li><a href="special_login.html"><i class="fas fa-heart"></i> Special Edition</a></li>
+            <div class="nav-icon">
+              <a href="index.html"><i class="fa-solid fa-house-chimney-window"></i></a>
+              <div class="tooltip">Home</div>
+            </div>            
+            <div class="nav-icon">
+              <a href="cards.html"><i class="fa-solid fa-chalkboard"></i></a>
+              <div class="tooltip">Learn</div>
+            </div>
+            <div class="nav-icon">
+              <a href="tests.html"><i class="fas fa-book"></i></a>
+              <div class="tooltip">Test</div>
+            </div>
+            <div class="nav-icon">
+              <a href="contact.html"><i class="fa-solid fa-at"></i></a>
+              <div class="tooltip">Contact</div>
+            </div>
+            <div class="nav-icon">
+              <a href="special-login.html"><i class="fa-solid fa-shield-heart"></i></a>
+              <div class="tooltip">Special</div>
+            </div>
+            <div class="nav-icon">
+              <a href="personal-goals.html"><i class="fa-solid fa-heart"></i></a>
+              <div class="tooltip">Personal Goals</div>
+            </div>
           </ul>
         </nav>
     </header>
 
   <div class="dashboard">
-    <div>Total Rows: <span id="totalRows">0</span></div>
+    <div>Total Words: <span id="totalRows">0</span></div>
     <div>Total Words Count in Al-Qur'an: <span id="totalCount">0</span></div>
     <div>Learned: <span id="totalLearned">0</span></div>
   </div>
 
   <div class="card-grid" id="cardGrid"></div>
 
-    <footer>
-    <p>&copy; 2025 ShareOra. All rights reserved. | Sharing is Caring. <i class="fas fa-heart"></i></p>
-    </footer>
+<footer>
+  <p>&copy; 2025 ShareOra. All rights reserved. | Sharing is Caring. <i class="fas fa-heart"></i></p>
+</footer>
+
+</body>
+
   <script src="script-card.js">
   </script>
 
-</body>
 </html>
