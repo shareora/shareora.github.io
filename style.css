@@ -1,91 +1,190 @@
-body {
-    background: lightpink url('pinkcloud.jpg');
-    background-size: cover;
-    background-repeat: repeat;
-    color: beige;
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ffc1cc, #a1c4fd),
+              url('pinkcloud.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Header */
 header {
+  background: linear-gradient(to right, rgba(255, 192, 203, 0.7), rgba(173, 216, 230, 0.7));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
   position: relative;
-  height: 300px;
+  z-index: 10;
 }
 
 .header-content {
-  position: relative;
-  z-index: 1;
-  color: white;
-  margin: 10px;
-  text-align: center;
-  font-size: 3rem;
-}
-nav {
-    display: absolute;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
+header h1 {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+/* Nav */
 nav ul {
-    background-color: #fad0c4;
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-icon {
-    position: relative;
-    margin: 0 30px;
-    text-align: center;
+  position: relative;
 }
 
 .nav-icon a {
-    text-decoration: none;
-    color: rgb(240, 12, 12);
-    font-size: 24px;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.nav-icon i {
-      transition: color 0.3s;
+.nav-icon a:hover {
+  color: #ff66a0;
 }
 
-.nav-icon a:hover i {
-      color: #ffccff;
-}
-
+/* Tooltip */
 .tooltip {
-      visibility: hidden;
-      opacity: 0;
-      background-color: rgba(0, 0, 0, 0.8);
-      color: #fff;
-      text-align: center;
-      border-radius: 6px;
-      padding: 5px 8px;
-      position: absolute;
-      bottom: -35px;
-      left: 50%;
-      transform: translateX(-50%);
-      white-space: nowrap;
-      transition: opacity 0.3s;
-      font-size: 14px;
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  transition: opacity 0.3s;
 }
 
 .nav-icon:hover .tooltip {
-      visibility: visible;
-      opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
-nav ul {
-    display: flex;
-    gap: 50px;
-}
-
+/* Messages (Main Content) */
 .messages {
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a6c1ee);
-    padding: 10px;
-    border-radius: 16px;
-    color: rgb(202, 24, 24);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    font-size: larger;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(255,182,193,0.3), rgba(173,216,230,0.3));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  color: #222;
 }
 
+.messages h2, .messages h3 {
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.messages p {
+  margin-bottom: 16px;
+}
+
+/* Buttons */
 button {
-    border: 3px solid #db2d61;
-    padding: 5px 5px;
-    border-radius: 10px 10px;
+  background: #ff6fb1;
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
+button:hover {
+  background: #ff458c;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* Media Queries: Responsive */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .messages {
+    margin: 20px 12px;
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-icon a {
+    font-size: 20px;
+  }
+
+  .tooltip {
+    font-size: 10px;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  .messages {
+    font-size: 15px;
+  }
+}
