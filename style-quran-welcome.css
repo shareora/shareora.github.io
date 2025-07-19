@@ -80,7 +80,8 @@ body.night-mode p {
 
 /* ===== Fixed Transparent Navbar ===== */
 header {
-  position: fixed;
+  position: flex;
+  flex-wrap: wrap;
   top: 0;
   width: 100%;
   z-index: 1000;
