@@ -1,9 +1,20 @@
   function checkAnswers() {
     const answers = {
-      q1: "b",
-      q2: "a",
-      q3: "b",
-      q4: "c"
+      q1: "c",
+      q2: "c",
+      q3: "a",
+      q4: "b",
+      q5: "b",
+      q6: "b",
+      q7: "b",
+      q8: "a",
+      q9: "b",
+      q10: "b",
+      q11: "b",
+      q12: "b",
+      q13: "a",
+      q14: "b",
+      q15: "b"
     };
 
     let score = 0;
@@ -24,6 +35,6 @@
     }
 
     const resultDiv = document.getElementById("result");
-    resultDiv.innerHTML = `<h3>Your score: ${score}/4</h3>` + output;
+    resultDiv.innerHTML = `<h3>Your score: ${score}/15</h3>` + output;
     resultDiv.style.display = "block";
   }
