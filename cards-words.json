@@ -1,0 +1,14 @@
+[
+      { "arabic": "آيَة", "translit": "ayah", "english": "sign", "count": 382, "learnt": false, "questions": "آيَة", "answer":"sign" },
+      { "arabic": "بَيَّنَة", "translit": "bayyinah", "english": "evidence", "count": 71, "learnt": false, "questions": "بَيَّنَة", "answer":"evidence"},
+      { "arabic": "قُرْآن", "translit": "َqur'an", "english": "recitation", "count": 70, "learnt": false, "questions": "قُرْآن", "answer":"recitation" },
+      { "arabic": "أَنْعَام", "translit": "an'aam", "english": "cattle", "count": 32, "learnt": false, "questions": "أَنْعَام", "answer":"cattle" },
+      { "arabic": "جَبَل", "translit": "jabal", "english": "mountain", "count": 39, "learnt": false, "questions": "جَبَل", "answer":"mountain" },
+      { "arabic": "بَحْر", "translit": "bahr", "english": "sea; ocean", "count": 38, "learnt": false, "questions": "بَحْر", "answer":"sea; ocean" },
+      { "arabic": "شَمْس", "translit": "shams", "english": "sun", "count": 33, "learnt": false, "questions": "شَمْس", "answer":"sun" },
+      { "arabic": "قَمَر", "translit": "qamar", "english": "moon", "count": 33, "learnt": false, "questions": "قَمَر", "answer":"moon" },
+      { "arabic": "لَيْل", "translit": "layl", "english": "night", "count": 80, "learnt": false, "questions": "لَيْل", "answer":"night" },
+      { "arabic": "نَهَار", "translit": "nahaar", "english": "day", "count": 57, "learnt": false, "questions": "نَهَار", "answer":"day" },
+      { "arabic": "أَرْض", "translit": "ard'", "english": "earth", "count": 461, "learnt": false, "questions": "أَرْض", "answer":"earth" },
+      { "arabic": "سَمَاء", "translit": "samaa'", "english": "sky", "count": 310, "learnt": false, "questions": "سَمَاء", "answer":"sky" }
+]
